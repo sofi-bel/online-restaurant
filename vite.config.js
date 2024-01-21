@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
+import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
     root: resolve(__dirname, "src/"),
@@ -17,6 +18,16 @@ export default defineConfig({
         minifyIdentifiers: false,
         keepNames: true,
     },
+    plugins: [
+      viteStaticCopy({
+        targets: [
+          { src: "assets/images/*", dest: "assets/images/" },
+          { src: "assets/styles/*", dest: "assets/styles/" },
+          { src: "assets/lib/*", dest: "assets/lib/" },
+          { src: "products.json", dest: "./" },
+        ],
+      }),
+    ],
     server: {
         port: 3000,
         strictPort: true,
