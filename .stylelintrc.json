@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "stylelint-config-recommended"
+  ],
+  "rules": {
+    "unit-allowed-list": ["%", "deg", "px", "rem", "ms", "fr", "vh", "s", "ch"],
+    "at-rule-no-unknown": null,
+    "no-invalid-position-at-import-rule": null,
+    "media-query-no-invalid": null
+  },
+  "ignoreFiles": [
+    "dist/*"
+  ]
+}
