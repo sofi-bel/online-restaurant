@@ -10,9 +10,6 @@ import ProductsGrid from "./components/productsGrid/index.js";
 import CartIcon from "./components/cartIcon/index.js";
 import Cart from "./components/cart/index.js";
 
-import "./assets/styles/all.scss";
-import "./assets/styles/common.scss";
-
 export default class Main {
   constructor() {}
 
