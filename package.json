@@ -21,7 +21,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.9.0",
-    "prettier": "^3.2.4",
+    "prettier": "^3.4.2",
     "sass": "^1.70.0",
     "stylelint": "^16.2.0",
     "stylelint-config-recommended": "^14.0.0",
