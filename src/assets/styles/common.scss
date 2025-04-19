@@ -14,7 +14,7 @@
   --color-body: var(--color-white);
   --carousel-height: 313px;
   --card-height: 320px;
-  --font-primary: "Lato";
+  --font-primary: "Lato", sans-serif;
   --font-secondary: "Sriracha";
 }
 
@@ -37,12 +37,14 @@ body {
 
 a {
   background-color: transparent;
-  -webkit-text-decoration-skip: objects;
+  color: var(--color-yellow);
+  text-decoration: none;
 }
 
 a:active,
 a:hover {
   outline-width: 0;
+  text-decoration: underline;
 }
 
 * {
@@ -152,6 +154,10 @@ h2,
   margin: 0;
 }
 
+.footer {
+  padding: 16px 0;
+}
+
 @media all and (max-width: 767px) {
   h1,
   .heading {
@@ -176,6 +182,10 @@ h2,
   .header {
     padding: 20px 0 30px;
     overflow: hidden;
+  }
+
+  .footer {
+    padding: 16px;
   }
 }
 
